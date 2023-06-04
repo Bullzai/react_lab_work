@@ -14,9 +14,10 @@
     "react-router-dom": "6.3.0"
   },
   "scripts": {
-    "storybook": "cross-env NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006 -s public",
+    "storybook": "CHOKIDAR_USEPOLLING=true cross-env NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook",
     "dev": "vite",
+    "dev2": "CHOKIDAR_USEPOLLING=true vite",
     "build": "vite build",
     "preview": "vite preview"
   },
