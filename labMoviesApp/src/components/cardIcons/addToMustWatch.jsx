@@ -6,12 +6,13 @@ import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 const AddToMustWatchIcon = ({ movie }) => {
   const context = useContext(MoviesContext);
 
-  const onUserSelect = (e) => {
+  const onUserSelect2 = (e) => {
     e.preventDefault();
     context.addToMustWatch(movie);
+    // console.log(movie);
   };
   return (
-    <IconButton aria-label="add to must watch" onClick={onUserSelect}>
+    <IconButton aria-label="add to must watch" onClick={onUserSelect2}>
       <PlaylistAddIcon color="primary" fontSize="large" />
     </IconButton>
   );
